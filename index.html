@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio - Abraham</title>
+
+  <!-- Load fonts: Montserrat for site text, Poppins kept for brand & placeholders -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700;900&family=Poppins:wght@700;900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <!-- Hero Section -->
+  <section class="hero" id="hero">
+    <nav>
+      <ul>
+        <li><span class="brand">&lt;/ITZYEBOIABRAHAM&gt;</span></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+
+      <!-- mobile hamburger (keeps current icon) -->
+      <button class="mobile-menu-btn" aria-label="Open menu" type="button">
+        <img src="images/burger-bar.png" alt="Open menu">
+      </button>
+    </nav>
+
+    <div class="hero-content">
+      <h1>Hi, I'm Abraham.</h1>
+
+      <p>
+        A<strong> software engineer</strong> from Ghana who loves turning caffeine and code into meaningful digital experiences.
+        I build, break, and rebuild things until they just work. When I’m not coding, you’ll probably find me exploring new tech trends, geeking out over design details, and always chasing that next “aha!” moment.😅
+      </p>
+
+      <div class="actions">
+        <a class="btn primary" href="#contact">LET'S WORK TOGETHER</a>
+        <a class="btn secondary" href="#projects">VIEW MY WORK</a>
+      </div>
+
+      <div class="socials" aria-hidden="false">
+        <a href="https://github.com/ItzyeboiAbraham"><img src="images/github-logo.png" alt="GitHub"></a>
+        <a href="http://www.linkedin.com/in/abraham-tetteh-78017a376/"><img src="images/linkedin-logo.png" alt="LinkedIn"></a>
+        <a href="https://x.com/ItzyeboiAbraham?t=Hv_uvliBu_LnLLuXXAX4Sw&s=09"><img src="images/x-logo.png" alt="X"></a>
+        <a href="http:///"><img src="images/instagram-logo.png" alt="Instagram"></a>
+      </div>
+    </div>
+
+    <!-- keep existing mobile menu markup (if you have it) -->
+    <div class="mobile-menu-overlay" aria-hidden="true"></div>
+    <aside class="mobile-menu" aria-hidden="true" role="dialog" aria-label="Mobile menu">
+      <button class="mobile-menu-close" aria-label="Close menu" type="button">
+        <img src="images/cancel.png" alt="Close menu">
+      </button>
+
+      <ul class="mobile-menu-list">
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </aside>
+  </section>
+
+  <!-- Services Section (add this BEFORE the Projects section) -->
+  <section class="services" id="services">
+    <div class="wrap">
+      <h2>My Services</h2>
+
+      <div class="services-grid">
+        <article class="service-card">
+          <div class="service-icon">
+            <img src="images/code.png" alt="Development">
+          </div>
+          <h3>Web Development</h3>
+          <p>Personal & Business Websites – Clean, sleek responsive websites focused on usability and performance for clients.</p>
+          <a class="learn" href="#projects">Learn more</a>
+        </article>
+
+        <article class="service-card">
+          <div class="service-icon">
+            <img src="images/system.png" alt="UI/UX Design">
+          </div>
+          <h3>Info Sys/MIS Development</h3>
+          <p>Custom CRM/ERP & MIS Tools – build small-scale management systems for businesses.</p>
+          <a class="learn" href="#projects">Learn more</a>
+        </article>
+
+        <article class="service-card">
+          <div class="service-icon">
+            <img src="images/play-store.png" alt="App Development">
+          </div>
+          <h3>App Development</h3>
+          <p>Cross-Platform mobile & desktop app interfaces with attention to flow and accessibility that runs everywhere for clients or startups.</p>
+          <a class="learn" href="#projects">Learn more</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section class="projects" id="projects">
+    <div class="wrap">
+    <h2>Projects</h2>
+
+    <div class="project-grid">
+      <article class="project-card">
+        <img src="images/car-website.png" alt="Car Ecommerce Website" class="project-card-image">
+        <div class="project-card-content">
+          <h3>Car Ecommerce Website</h3>
+          <p>A responsive e-commerce multi-page car dealership and inventory website developed using HTML, CSS, and JavaScript. Built for selling cars and dealership services, and collection customer reviews and contact requests.</p>
+          
+          <div class="project-footer">
+            <a href="https://itzyeboiabraham.github.io/Car-Website/" class="project-link" aria-label="Preview project">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                <circle cx="12" cy="12" r="3"></circle>
+              </svg>
+              Preview
+            </a>
+            <a href="https://github.com/ItzyeboiAbraham/Car-Website" class="project-link" aria-label="View code">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v 3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+              </svg>
+              Code
+            </a>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-card">
+        <img src="images/sip.jpg" alt="Student Information Portal" class="project-card-image">
+        <div class="project-card-content">
+          <h3>Student Information Portal</h3>
+          <p>A simple student information portal console application built using C++. The program allows a student to sign up, log in and outputs a set of static grades.</p>
+          
+          <div class="project-footer">
+            <a href="https://github.com/ItzyeboiAbraham/C-plus-plus-SIP" class="project-link" aria-label="Preview project">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                <circle cx="12" cy="12" r="3"></circle>
+              </svg>
+              Preview
+            </a>
+            <a href="https://github.com/ItzyeboiAbraham/C-plus-plus-SIP" class="project-link" aria-label="View code">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v 3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+              </svg>
+              Code
+            </a>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-card">
+        <img src="images/tictactoe.jpg" alt="TicTacToe" class="project-card-image">
+        <div class="project-card-content">
+          <h3>TicTacToe</h3>
+          <p>A simple TicTacToe game built using Javascript. The game allows two players to play against each other on a 3x3 grid.</p>
+          
+          <div class="project-footer">
+            <a href="#" class="project-link" aria-label="Preview project">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                <circle cx="12" cy="12" r="3"></circle>
+              </svg>
+              Preview
+            </a>
+            <a href="#" class="project-link" aria-label="View code">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v 3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+              </svg>
+              Code
+            </a>
+          </div>
+        </div>
+      </article>
+    </div>
+
+    <div class="projects-actions">
+      <button class="see-more" type="button" aria-label="See more projects">
+        SEE MORE
+      </button>
+    </div>
+    </div>
+  </section>
+  
+  <!-- Contact Section -->
+  <section class="contact" id="contact">
+    <div class="contact-inner">
+      <!-- LEFT: contact info -->
+      <aside class="contact-info">
+        <h2>Contact Me</h2>
+
+        <div class="info-item-email">
+          <img src="images/envelope-solid.png" alt="email" class="icon">
+          <a href="mailto:contact@example.com" class="info-link">abrahamjunior185@gmail.com</a>
+        </div>
+
+        <div class="info-item">
+          <img src="images/call.png" alt="phone" class="icon">
+          <span class="info-text">+233 059 627 4392</span>
+        </div>
+
+        <div class="info-item-location">
+          <img src="images/location-dot-solid.png" alt="location" class="icon">
+          <span class="info-text">Tema, Ghana</span>
+        </div>
+
+        <div class="social-icons">
+          <a href="#" title="Whatsapp"><img src="images/whatsapp-logo.png" alt="Whatsapp"></a>
+          <a href="https://x.com/ItzyeboiAbraham?t=Hv_uvliBu_LnLLuXXAX4Sw&s=09" title="Twitter"><img src="images/x-logo.png" alt="Twitter"></a>
+          <a href="" title="Instagram"><img src="images/instagram-logo.png" alt="Instagram"></a>
+          <a href="http://www.linkedin.com/in/abraham-tetteh-78017a376/" title="LinkedIn"><img src="images/linkedin-logo.png" alt="LinkedIn"></a>
+        </div>
+
+        <a class="btn-download" href="files/Abraham_Tetteh_CV.pdf" download>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+         stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 3v13"/>
+            <path d="M7 11l5 5 5-5"/>
+            <path d="M4 20h16"/>
+          </svg>
+          DOWNLOAD CV
+        </a>
+      </aside>
+
+      <!-- RIGHT: contact form -->
+      <div class="contact-right">
+        <form name="submit-to-google-sheet" class="contact-form" action="#" method="post" novalidate>
+          <input type="text" id="name" name="Name" placeholder="Your Name" required>
+          <input type="email" id="email" name="Email" placeholder="Your Email" required>
+          <textarea id="message" name="Message" placeholder="Your Message" rows="8" required></textarea>
+
+          <button type="submit" class="submit-btn">SUBMIT</button>
+
+          <!-- moved message element inside the form so it appears below the submit button -->
+          <div id="msg" role="status" aria-live="polite" class="form-message"></div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="wrap">
+      <div class="footer-inner">
+        <p class="footer-copy">© 2025 Abraham Junior — All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+<!-- place JS before closing body tag to toggle the mobile menu -->
+<script>
+  (function () {
+    const btn = document.querySelector('.mobile-menu-btn');
+    const closeBtn = document.querySelector('.mobile-menu-close');
+    const menu = document.querySelector('.mobile-menu');
+    const overlay = document.querySelector('.mobile-menu-overlay');
+    const links = document.querySelectorAll('.mobile-menu-list a');
+
+    function openMenu() {
+      menu.classList.add('open');
+      overlay.classList.add('open');
+      document.body.style.overflow = 'hidden';
+      menu.setAttribute('aria-hidden', 'false');
+      overlay.setAttribute('aria-hidden', 'false');
+    }
+    function closeMenu() {
+      menu.classList.remove('open');
+      overlay.classList.remove('open');
+      document.body.style.overflow = '';
+      menu.setAttribute('aria-hidden', 'true');
+      overlay.setAttribute('aria-hidden', 'true');
+    }
+
+    if (btn) btn.addEventListener('click', openMenu);
+    if (closeBtn) closeBtn.addEventListener('click', closeMenu);
+    if (overlay) overlay.addEventListener('click', closeMenu);
+    links.forEach(l => l.addEventListener('click', closeMenu));
+
+    // allow Esc to close
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && menu.classList.contains('open')) closeMenu();
+    });
+  }());
+</script>
+
+<!-- contact me form submit-to-google-sheet script -->
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbxvbu1FXmVL8ECMxyGTG6sL-8TpB9flSvcQfQ8HOR9V2b-lMVdbyBa1jp8VCDcApR8/exec'
+  const form = document.forms['submit-to-google-sheet']
+  const msg = document.getElementById("msg");
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+        msg.innerHTML = "Message sent successfully";
+        setTimeout(function(){
+          msg.innerHTML = "";
+        }, 5000);
+        form.reset();
+      })
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
+</body>
+</html>
